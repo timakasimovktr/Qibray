@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="theme-color" content="#1e1043"> -->
+    <meta name="theme-color" content="#201F1F">
+    <meta name="msapplication-navbutton-color" content="#201F1F">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#201F1F">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="QIBRAy, Санаторий">
+    <link rel="shortcut icon" href="img/logotitle1.png" />
+    <title>Номера санатория</title>
+    <!-- ===========CCЫЛКИ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ===========ШРИФТЫ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lobster', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Source Sans Pro', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Rubik', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- ============================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+
+    <script defer src="js/jquery-3.2.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({
+            mobile: false,       // default
+        }).init();
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <content>
+            <input id="hamburger" class="hamburger" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                    <close>close</close>
+                    <open>Меню</open>
+                </text>
+            </label>
+
+            <div class="drawer-list">
+                <ul>
+                    <li><a class="social_ico" href="#"><img src="img/soc1.png" alt="">INSTAGRAM </a></li>
+                    <li><a class="social_ico" href="#"><img src="img/soc2.png" alt="">TELEGRAM </a></li>
+                    <li><a class="social_ico" href="#"><img src="img/soc3.png" alt="">FACEBOOK </a></li>
+                </ul>
+            </div>
+        </content>
+    </div>
+
+    <header>
+        <div class="header_info">
+            <div class="container">
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/placeholder (1).png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>МЫ НАХОДИМСЯ</h3>
+                        <p>Кибрайский район, городской посёлок Арген, ул. Маткабулова, 24
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/letter.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>
+                            ПИШИТЕ НАМ:</h3>
+                        <p>qibray@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/telephone.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>звоните НАМ</h3>
+
+                        <p>
+                            +99893 399 60 00 <br>
+                            +99899 100 60 00
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <a href="#about">
+                        <div class="hid_icon"><img src="img/email.png" alt=""></div>
+                        <h3>Оставьте заявку</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <nav class="header_nav">
+            <div class="container">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <h3 class="menu_h3">Лечебно-оздоровительный санаторий в Узбекистане</h3>
+                <a href="#" class="lang">uz</a>
+                <div class="nav_media">
+                    <a href="#" class="nav_icon"><img src="img/soc1.png" alt=""></a>
+                    <a href="#" class="nav_icon"><img src="img/soc2.png" alt=""></a>
+                    <a href="#" class="nav_icon"><img src="img/soc3.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <!-- <div class="social-media">
+                    <a class="social" href="#"><img title="INSTAGRAM" src="img/soc1.png" alt=""></a>
+                    <a class="social" href="#"><img title="FACEBOOK" src="img/soc2.png" alt=""></a>
+                    <a class="social" href="#"><img title="TELEGRAM" src="img/soc3.png" alt=""></a>
+                </div> -->
+
+
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <div class="nomera_banner" style="background: url(img/nomera_banner.jpg) 50% 50% / cover;"></div>
+        </section>
+
+        <section class="nomera">
+            <div class="container">
+                <div class="nomer">
+                    <div class="nomer_carousel" style="position:sticky; top: 20px;">
+                            <div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+                                <div class="carousel__slide" data-src="img/1polulux.jpg"
+                                    data-fancybox="gallery"
+                                    data-caption="">
+                                    <img src="img/1polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/2polulux.jpg"
+                                    data-fancybox="gallery"
+                                    data-caption="">
+                                    <img src="img/2polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/3polulux.jpg"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/3polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/4polulux.jpg"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/4polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/5polulux.jpg"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/5polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/6polulux.jpg"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/6polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide" data-src="img/7polulux.jpg"
+                                    data-fancybox="gallery" data-caption="">
+                                    <img src="img/7polulux.jpg" />
+                                </div>
+                            </div>
+    
+                            <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/1polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/2polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/3polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/4polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/5polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/6polulux.jpg" />
+                                </div>
+                                <div class="carousel__slide">
+                                    <img class="panzoom__content" src="img/7polulux.jpg" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="nomer_text">
+                        <h3>2-комнатная палата (полу/люкс)</h3>
+                        <div class="nomer_line"></div>
+                        <p>Двухместный номер состоит из прихожей, спальни, зала, сан узла и балкона.
+                            Для проживания с комфортом в комнате существуют все удобства из них:</p>
+                        <ul>
+                            <li>комплект посуды на двоих (большая тарелка, средняя тарелка, маленькая тарелка, чайник,
+                                чашка, пияла, глубокая чашка для супа, ваза для фруктов, салатница, сольница, сахарница,
+                                салфетница, ложка столовая, ложка чайная, вилка, нож, конфетница 4 шт, бумажные
+                                салфетки)</li>
+                            <li>кондиционер</li>
+                            <li>телевизор </li>
+                            <li>холодильник </li>
+                            <li>электрический чайник </li>
+                            <li>кровать – 2 шт </li>
+                            <li>тумбочка – 2 шт </li>
+                            <li>шкаф </li>
+                            <li>стол</li>
+                            <li>стулья – 2 шт</li>
+                            <li>мягкая мебель</li>
+                            <li>комод</li>
+                            <li>комплект постельного белья – 2 шт</li>
+                        </ul>
+                        <div class="nomer_line"></div>
+                        <p>Удобства в ванной комнате:</p>
+                        <ul>
+                            <li>ванная </li>
+                            <li>туалет </li>
+                            <li>зеркало </li>
+                            <li>aty </li>
+                            <li>мыло – 2 шт </li>
+                            <li>туалетная бумага </li>
+                            <li>зубная паста с щеткой – 2 шт</li>
+                            <li>набор полотенец (банное, для лица, для ног) – 2 шт</li>
+                        </ul>
+                        <div class="nomer_line"></div>
+                        <p>В стоимость включено: проживание, 3-х разовое питание, санаторное лечение.</p>
+                        <div class="nomer_line"></div>
+
+                        <div class="price">
+                            <div class="price_list">600 000 сум / в день</div>
+                            <div class="reserve">
+                                <a href="#" class="btn_reserve">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <div class="footer_info">
+            <div class="container">
+                <div class="hid ">
+                    <h2>НАШИ
+                        КОНТАКТЫ</h2>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/letter.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>
+                            ПИШИТЕ НАМ:</h3>
+                        <p>qibray@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/telephone.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>звоните НАМ</h3>
+
+                        <p>
+                            93 399 60 00 <br>
+                            99 100 60 00
+                        </p>
+                    </div>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/placeholder (1).png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>МЫ НАХОДИМСЯ</h3>
+                        <p>Кибрайский район, <br> городской посёлок Арген, <br> ул. Маткабулова, 24
+                        </p>
+                    </div>
+                </div>
+                <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click" target="_blank"><img
+                        id="licnt54A3" width="88" height="31" style="border:0"
+                        title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                        alt="" /></a>
+                <script>(function (d, s) {
+                        d.getElementById("licnt54A3").src =
+                            "https://counter.yadro.ru/hit?t15.6;r" + escape(d.referrer) +
+                            ((typeof (s) == "undefined") ? "" : ";s" + s.width + "*" + s.height + "*" +
+                                (s.colorDepth ? s.colorDepth : s.pixelDepth)) + ";u" + escape(d.URL) +
+                            ";h" + escape(d.title.substring(0, 150)) + ";" + Math.random()
+                    })
+                        (document, screen)</script>
+                <!--/LiveInternet-->
+
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <!-- ============================================== -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>

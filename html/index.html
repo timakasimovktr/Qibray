@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="theme-color" content="#1e1043"> -->
+    <meta name="theme-color" content="#201F1F">
+    <meta name="msapplication-navbutton-color" content="#201F1F">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#201F1F">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="QIBRAy, Санаторий">
+    <link rel="shortcut icon" href="img/logotitle1.png" />
+    <title>Qibray - Санаторий</title>
+    <!-- ===========CCЫЛКИ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- ===========ШРИФТЫ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lobster', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Source Sans Pro', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Rubik', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- ============================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+
+    <script defer src="js/jquery-3.2.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({
+            mobile: false,       // default
+        }).init();
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <content>
+            <input id="hamburger" class="hamburger" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                    <close>close</close>
+                    <open>Меню</open>
+                </text>
+            </label>
+            
+            <div class="drawer-list">
+                <ul>
+                    <li><a class="social_ico" href="#"><img src="img/soc1.png" alt="">INSTAGRAM </a></li>
+                    <li><a class="social_ico" href="#"><img src="img/soc2.png" alt="">TELEGRAM </a></li>
+                    <li><a class="social_ico" href="#"><img src="img/soc3.png" alt="">FACEBOOK </a></li>
+                </ul>
+            </div>
+        </content>
+    </div>
+
+    <header>
+
+        <div class="header_info">
+            <div class="container">
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/placeholder (1).png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>МЫ НАХОДИМСЯ</h3>
+                        <p>Кибрайский район, городской посёлок Арген, ул. Маткабулова, 24
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/letter.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>
+                            ПИШИТЕ НАМ:</h3>
+                        <p>qibray@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <div class="hid_icon"><img src="img/telephone.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>звоните НАМ</h3>
+
+                        <p>
+                            +99893 399 60 00 <br>
+                            +99899 100 60 00
+                        </p>
+                    </div>
+                </div>
+                <div class="hid col-3">
+                    <a href="#about">
+                        <div class="hid_icon"><img src="img/email.png" alt=""></div>
+                        <h3>Оставьте заявку</h3>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <nav class="header_nav">
+            <div class="container">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <h3 class="menu_h3">Лечебно-оздоровительный санаторий в Узбекистане</h3>
+                <a href="#" class="lang">uz</a>
+                <div class="nav_media">
+                    <a href="#" class="nav_icon"><img src="img/soc1.png" alt=""></a>
+                    <a href="#" class="nav_icon"><img src="img/soc2.png" alt=""></a>
+                    <a href="#" class="nav_icon"><img src="img/soc3.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <!-- <div class="social-media">
+                    <a class="social" href="#"><img title="INSTAGRAM" src="img/soc1.png" alt=""></a>
+                    <a class="social" href="#"><img title="FACEBOOK" src="img/soc2.png" alt=""></a>
+                    <a class="social" href="#"><img title="TELEGRAM" src="img/soc3.png" alt=""></a>
+                </div> -->
+
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="slider class=" body1_right">
+            <!-- <section class="slider class="body1_right parallax-window col-lg-6" data-parallax="scroll"
+        data-image-src="./img/photo_2021-06-19_11-27-33.jpg"> -->
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ss1">
+                        <!-- <div class="slide-img"><img class="header-slider-image" src="img/Rectangle 7.png" alt="">
+                            </div> -->
+                        <div class="slide-text">
+                            <h4>ЛЕТНИЙ ОТДЫХ В « QIBRAY »</h4>
+                            <!-- <p>Функциональные возможности: <br>
+                                    • определение потребленного тепла на основании измерения расхода теплоносителя в
+                                    прямом или обратном трубопроводах и температур на прямом и обратном трубопроводе;
+                                    <br>
+                                    • отображение текущей измерительной и архивной информации, а также зафиксированных
+                                    нештатных состояний теплосистемы на индикаторе прибора; <br>
+                                </p>
+                                <a href="#">Подробнее</a> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss2">
+                        <!-- <div class="slide-img"><img class="header-slider-image" src="img/Rectangle 7.png" alt="">
+                            </div> -->
+                        <div class="slide-text">
+                            <h4>Санаторий - « Qibray » - это место, где Вы сможете поправить свое здоровье, зарядиться
+                                энергией и положительными эмоциями, оздоровиться и подлечиться.</h4>
+                            <!-- <p>Функциональные возможности: <br>
+                                    • определение потребленного тепла на основании измерения расхода теплоносителя в
+                                </p>
+                                <a href="#">Подробнее</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+            </div>
+            <div class="swiper-button-prev"><img src="img/arrow-left.png" alt=""></div>
+            <div class="swiper-button-next"><img src="img/arrow-right.png" alt=""></div>
+
+        </section>
+
+
+        <section class="numbers">
+            <div class="container">
+                <div class="numbers_div row">
+                    <div class="left_text">
+                        <h3>НАШИ НОМЕРА</h3>
+                        <p>Любой номер на Ваш выбор</p>
+                    </div>
+                    <div class="num_left col-9">
+                        <div class="num_item">
+                            <img src="img/1lux.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>Двухместный номер</h3>
+                                <p>2х-комнатная палата (люкс) состоит из прихожей, спальни, зала, сан узла и балкона.
+                                    Для проживания с комфортом в комнате существуют все удобства</p>
+                                <a href="2lux.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="num_item">
+                            <img src="img/1plux.png" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>Однокомнатный номер</h3>
+                                <p>1 -комнатная палата (люкс) состоит из прихожей, спальни, сан узла и балкона. 
+                                    Для проживания с комфортом в комнате существуют все удобства</p>
+                                <a href="1lux.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="num_item">
+                            <img src="img/1polulux.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>2-комнатная палата <br>(полу/люкс)</h3>
+                                <p>Двухместный номер состоит из прихожей, спальни, сан узла и балкона.
+                                    Для проживания с комфортом в комнате существуют все удобства из них:
+                                    </p>
+                                <a href="2polulux.html">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="num_item">
+                            <img src="img/1polulux.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>2-комнатная палата <br>(полу/люкс)</h3>
+                                <p>Двухместный номер состоит из прихожей, спальни, сан узла и балкона.
+                                    Для проживания с комфортом в комнате существуют все удобства из них:
+                                    </p>
+                                <a href="2polulux.html">Подробнее</a>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="num_right2">
+
+                        <div class="nr_div">
+                            <div class="nr_icon">
+                                <img src="img/double-bed.png" alt="">
+                                <p>Комфортабельное размещение</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/restaurant.png" alt="">
+                                <p>4-x разовое правильное питание</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/cardiogram.png" alt="">
+                                <p>Оздоровительные процедуры</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/manager.png" alt="">
+                                <p>Качественный сервис</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/mountain.png" alt="">
+                                <p>Чистейший горный воздух</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/restaurant.png" alt="">
+                                <p>4-x разовое правильное питание</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="num_right col-3">
+                        <h3>НАШИ НОМЕРА</h3>
+                        <p>Любой номер на Ваш выбор</p>
+
+                        <div class="nr_div">
+                            <div class="nr_icon">
+                                <img src="img/double-bed.png" alt="">
+                                <p>Комфортабельное размещение</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/restaurant.png" alt="">
+                                <p>4-x разовое правильное питание</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/cardiogram.png" alt="">
+                                <p>Оздоровительные процедуры</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/manager.png" alt="">
+                                <p>Качественный сервис</p>
+                            </div>
+                            <div class="nr_icon">
+                                <img src="img/mountain.png" alt="">
+                                <p>Чистейший горный воздух</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="health">
+                    <div class="health_txt">
+                        <h3>ЛЕЧЕНИЕ</h3>
+                        <p>Комплекс процедур для полного восстановления организма</p>
+                    </div>
+
+                    <div class="health_div">
+
+                        <div class="num_item col-4">
+                            <img src="img/man-1209275_1920.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>Иппотерапия</h3>
+                                <p>Уникальный метод лечения как иппотерапия включен в комплекс оздоровления организма в
+                                    QIBRAY. Данный вид лечения происходит при помощи занятий с лошадьми для
+                                    здоровья людей, особенно, для маленьких пациентов. </p>
+                                <a href="#">Узнать больше </a>
+                            </div>
+                        </div>
+                        <div class="num_item col-4">
+                            <img src="img/mountains-nature-landscape-min.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>Иппотерапия</h3>
+                                <p>Уникальный метод лечения как иппотерапия включен в комплекс оздоровления организма в
+                                    QIBRAY. Данный вид лечения происходит при помощи занятий с лошадьми для
+                                    здоровья людей, особенно, для маленьких пациентов. </p>
+                                <a href="#">Узнать больше </a>
+                            </div>
+                        </div>
+                        <div class="num_item col-4">
+                            <img src="img/man-1209275_1920.jpg" class="card-img-top" alt="...">
+                            <div class="num_body">
+                                <h3>Иппотерапия</h3>
+                                <p>Уникальный метод лечения как иппотерапия включен в комплекс оздоровления организма в
+                                    QIBRAY. Данный вид лечения происходит при помощи занятий с лошадьми для
+                                    здоровья людей, особенно, для маленьких пациентов. </p>
+                                <a href="#">Узнать больше </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="galery">
+                    <div class="health_txt">
+                        <h3>ФОТОГАЛЕРЕЯ</h3>
+                        <p> Лучше 1 раз увидеть, чем 1000 раз услышать </p>
+                    </div>
+
+                    <div class="gallery_div flex flex-wrap justify-center max-w-5xl mx-auto px-6">
+                        <a data-fancybox="gallery" href="img/galery1.jpg">
+                            <img class="rounded" src="img/galery1.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery2.jpg">
+                            <img class="rounded" src="img/galery2.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery3.jpg">
+                            <img class="rounded" src="img/galery3.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery4.jpg">
+                            <img class="rounded" src="img/galery4.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery5.jpg">
+                            <img class="rounded" src="img/galery5.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery6.jpg">
+                            <img class="rounded" src="img/galery6.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery7.jpg">
+                            <img class="rounded" src="img/galery7.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery8.jpg">
+                            <img class="rounded" src="img/galery8.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery9.jpg">
+                            <img class="rounded" src="img/galery9.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery10.jpg">
+                            <img class="rounded" src="img/galery10.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery11.jpg">
+                            <img class="rounded" src="img/galery11.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery12.jpg">
+                            <img class="rounded" src="img/galery12.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery13.jpg">
+                            <img class="rounded" src="img/galery13.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/galery14.jpg">
+                            <img class="rounded" src="img/galery14.jpg" alt="">
+                        </a>       
+                        <a data-fancybox="gallery" href="img/galery15.jpg">
+                            <img class="rounded" src="img/galery15.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                    <!-- <a href="#">Смотреть все фото</a> -->
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="rest">
+            <div class="container">
+                <div class="rest_div">
+                    <h2>Отдых в QIBRAY</h2>
+                    <h3>Забронируйте номер и получите незабываемый отдых</h3>
+                    <div class="rest_p">
+                        <div class="rest_p_left"></div>
+                        <div class="rest_p_right">
+                            <p>Мы приглашаем вас в наш оздоровительный комплекс, <br> где вы сможете окунуться в природу
+                                гор
+                                ТЯНЬ-ШАНЯ.
+
+                            </p>
+                            <p>
+                                QIBRAY - отдых, каким он должен быть!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rest_button">
+                        <a href="#about">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about_left col-8">
+                    <h3>Немного о нас</h3>
+                    <p>Санаторно-курортный комплекс <b>QIBRAY</b> специализируется на профилактическом лечении людей с
+                        заболеваниями сердечно-сосудистой системы, органов дыхания, опорно-двигательного аппарата.
+                        Комплекс оснащён современным высокоэффективным оборудованием GBO и RMS для проведения
+                        физиотерапевтических и гидротерапевтических процедур.</p>
+                    <a href="#">Узнать больше</a>
+                </div>
+                <div class="about_right col-4">
+                    <form action="">
+                        <h3>Оставить заявку</h3>
+                        <input type="text" placeholder="*Ваше Имя:">
+                        <input type="text" placeholder="*Телефон:">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A19aa4074fd13e73448bd9f8eef3f9282cca11b178b167b86e847f05839a9872f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+
+        <section class="contact">
+
+        </section>
+
+        <section class="otz">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="why_bg">
+                <div class="container">
+                    <h3>ПОЧЕМУ ВЫБИРАЮТ НАШ
+                        СЕМЕЙНО-ОЗДОРОВИТЕЛЬНЫЙ КОМПЛЕКС:</h3>
+                    <p>МЫ ИМЕЕМ НАМНОГО БОЛЬШЕ ПРЕИМУЩЕСТВ, ЧЕМ ВАМ КАЖЕТСЯ</p>
+
+                    <div class="why_container">
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer_info">
+            <div class="container">
+                <div class="hid ">
+                    <h2>НАШИ
+                        КОНТАКТЫ</h2>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/letter.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>
+                            ПИШИТЕ НАМ:</h3>
+                        <p>qibray@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/telephone.png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>звоните НАМ</h3>
+
+                        <p>
+                            93 399 60 00 <br>
+                            99 100 60 00
+                        </p>
+                    </div>
+                </div>
+                <div class="hid ">
+                    <div class="hid_icon"><img src="img/placeholder (1).png" alt=""></div>
+                    <div class="hid_text">
+                        <h3>МЫ НАХОДИМСЯ</h3>
+                        <p>Кибрайский район, <br> городской посёлок Арген, <br> ул. Маткабулова, 24
+                        </p>
+                    </div>
+                </div>
+                <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt54A3" width="88" height="31" style="border:0" 
+title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s){d.getElementById("licnt54A3").src=
+"https://counter.yadro.ru/hit?t15.6;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
+
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <!-- ============================================== -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
