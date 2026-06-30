@@ -47,6 +47,74 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
+(function () {
+  const LANG_KEY = "qibray-lang";
+  let currentLang = localStorage.getItem(LANG_KEY) || "ru";
+
+  function applyLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    localStorage.setItem(LANG_KEY, lang);
+
+    document.querySelectorAll("[data-ru][data-uz]").forEach(function (el) {
+      el.textContent = el.getAttribute("data-" + lang);
+    });
+
+    var langBtn = document.querySelector(".lang");
+    if (langBtn) {
+      langBtn.textContent = lang === "ru" ? "uz" : "ru";
+      langBtn.classList.toggle("is-active", lang === "uz");
+    }
+  }
+
+  var langBtn = document.querySelector(".lang");
+  if (langBtn) {
+    langBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      applyLang(currentLang === "ru" ? "uz" : "ru");
+    });
+  }
+
+  applyLang(currentLang);
+
+  var pricesSwiperEl = document.querySelector(".prices-swiper");
+  if (pricesSwiperEl && typeof Swiper !== "undefined") {
+    var counterCurrent = document.querySelector(".prices-carousel__current");
+    var counterTotal = document.querySelector(".prices-carousel__total");
+    var slideCount = pricesSwiperEl.querySelectorAll(".swiper-slide").length;
+
+    if (counterTotal) {
+      counterTotal.textContent = slideCount;
+    }
+
+    new Swiper(".prices-swiper", {
+      loop: slideCount > 1,
+      speed: 600,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: ".prices-carousel__arrow--next",
+        prevEl: ".prices-carousel__arrow--prev",
+      },
+      pagination: {
+        el: ".prices-carousel__dots",
+        clickable: true,
+      },
+      on: {
+        init: function () {
+          if (counterCurrent) {
+            counterCurrent.textContent = this.realIndex + 1;
+          }
+        },
+        slideChange: function () {
+          if (counterCurrent) {
+            counterCurrent.textContent = this.realIndex + 1;
+          }
+        },
+      },
+    });
+  }
+})();
+
 $(".galery_item", this).click(function () {
   var src = jQuery(".galery_item", this).children("img").attr("src");
   console.log(src);
