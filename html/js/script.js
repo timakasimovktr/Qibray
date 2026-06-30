@@ -62,8 +62,8 @@ const swiper = new Swiper(".swiper-container", {
 
     var langBtn = document.querySelector(".lang");
     if (langBtn) {
-      langBtn.textContent = lang === "ru" ? "uz" : "ru";
-      langBtn.classList.toggle("is-active", lang === "uz");
+      langBtn.textContent = lang; // show current language code
+      langBtn.classList.toggle("is-active", lang === "ru");
     }
   }
 
@@ -76,6 +76,11 @@ const swiper = new Swiper(".swiper-container", {
   }
 
   applyLang(currentLang);
+
+  // remove foreign-specific price rows so a single price is shown for everyone
+  document.querySelectorAll('.prices-card__price-row--alt').forEach(function(el){
+    el.remove();
+  });
 
   var pricesSwiperEl = document.querySelector(".prices-swiper");
   if (pricesSwiperEl && typeof Swiper !== "undefined") {
@@ -113,6 +118,22 @@ const swiper = new Swiper(".swiper-container", {
       },
     });
   }
+
+  // smooth scroll for booking links to #about and focus the form
+  document.querySelectorAll('a[href="#about"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.getElementById('about');
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        var input = target.querySelector('input');
+        if(input) input.focus();
+      } else {
+        window.scrollTo({top:0, behavior:'smooth'});
+      }
+    });
+  });
+
 })();
 
 $(".galery_item", this).click(function () {

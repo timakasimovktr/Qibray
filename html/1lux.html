@@ -84,7 +84,7 @@
         </content>
     </div>
 
-    <header>
+    <header id="top">
         <div class="header_info">
             <div class="container">
                 <div class="hid col-3">
@@ -128,7 +128,10 @@
             <div class="container">
                 <div class="logo"><img src="img/logo.png" alt=""></div>
                 <h3 class="menu_h3">Лечебно-оздоровительный санаторий в Узбекистане</h3>
-                <a href="#" class="lang">uz</a>
+                <div class="lang-switcher" aria-label="Выбор языка">
+                    <a href="#" class="lang is-active" data-lang="ru">RU</a>
+                    <a href="#" class="lang" data-lang="uz">UZ</a>
+                </div>
                 <div class="nav_media">
                     <a href="#" class="nav_icon"><img src="img/soc1.png" alt=""></a>
                     <a href="https://t.me/qibraysanatoriy_bot" class="nav_icon"><img src="img/soc2.png" alt=""></a>
@@ -233,7 +236,7 @@
                         <div class="price">
                             <div class="price_list">700 000 сум / в день</div>
                             <div class="reserve">
-                                <a href="#" class="btn_reserve">Забронировать</a>
+                                <a href="#top" class="btn_reserve">Забронировать</a>
                             </div>
                         </div>
                     </div>
