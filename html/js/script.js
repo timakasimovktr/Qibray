@@ -1,4 +1,4 @@
-// (function(){
+﻿// (function(){
 //   'use strict';
 
 //   class Menu {
@@ -62,7 +62,7 @@ const swiper = new Swiper(".swiper-container", {
 
     var langBtn = document.querySelector(".lang");
     if (langBtn) {
-      langBtn.textContent = lang; // show current language code
+      langBtn.textContent = langBtn.getAttribute("data-" + lang) || lang;
       langBtn.classList.toggle("is-active", lang === "ru");
     }
   }
@@ -76,11 +76,6 @@ const swiper = new Swiper(".swiper-container", {
   }
 
   applyLang(currentLang);
-
-  // remove foreign-specific price rows so a single price is shown for everyone
-  document.querySelectorAll('.prices-card__price-row--alt').forEach(function(el){
-    el.remove();
-  });
 
   var pricesSwiperEl = document.querySelector(".prices-swiper");
   if (pricesSwiperEl && typeof Swiper !== "undefined") {
@@ -118,22 +113,6 @@ const swiper = new Swiper(".swiper-container", {
       },
     });
   }
-
-  // smooth scroll for booking links to #about and focus the form
-  document.querySelectorAll('a[href="#about"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var target = document.getElementById('about');
-      if(target){
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-        var input = target.querySelector('input');
-        if(input) input.focus();
-      } else {
-        window.scrollTo({top:0, behavior:'smooth'});
-      }
-    });
-  });
-
 })();
 
 $(".galery_item", this).click(function () {
@@ -185,3 +164,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 // $(".hamburger__button").click(function () {
 //   $(this).css("margin-bottom", "100px");
 // })
+
+
+
+
