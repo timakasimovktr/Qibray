@@ -1,4 +1,4 @@
-// (function(){
+﻿// (function(){
 //   'use strict';
 
 //   class Menu {
@@ -20,121 +20,44 @@
 //   });
 // })();
 
-const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  // cssMode: true,
-  spaceBetween: 100,
-  loop: true,
-  effect: "fade",
-  speed: 2000,
-  // autoplay: {
-  //   delay: 8000,
-  //   disableOnInteraction: false,
-  // },
-  direction: "horizontal",
-
-  // If we need pagination
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
-(function () {
-  const LANG_KEY = "qibray-lang";
-  let currentLang = localStorage.getItem(LANG_KEY) || "ru";
-
-  function applyLang(lang) {
-    currentLang = lang;
-    document.documentElement.lang = lang;
-    localStorage.setItem(LANG_KEY, lang);
-
-    document.querySelectorAll("[data-ru][data-uz]").forEach(function (el) {
-      el.textContent = el.getAttribute("data-" + lang);
-    });
-
-    var langBtn = document.querySelector(".lang");
-    if (langBtn) {
-      langBtn.textContent = lang; // show current language code
-      langBtn.classList.toggle("is-active", lang === "ru");
-    }
-  }
-
-  var langBtn = document.querySelector(".lang");
-  if (langBtn) {
-    langBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      applyLang(currentLang === "ru" ? "uz" : "ru");
-    });
-  }
-
-  applyLang(currentLang);
-
-  // remove foreign-specific price rows so a single price is shown for everyone
-  document.querySelectorAll('.prices-card__price-row--alt').forEach(function(el){
-    el.remove();
+const swiperContainer = document.querySelector(".swiper-container");
+if (swiperContainer && typeof Swiper !== "undefined") {
+  new Swiper(swiperContainer, {
+    spaceBetween: 100,
+    loop: true,
+    effect: "fade",
+    speed: 2000,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
   });
+}
 
-  var pricesSwiperEl = document.querySelector(".prices-swiper");
-  if (pricesSwiperEl && typeof Swiper !== "undefined") {
-    var counterCurrent = document.querySelector(".prices-carousel__current");
-    var counterTotal = document.querySelector(".prices-carousel__total");
-    var slideCount = pricesSwiperEl.querySelectorAll(".swiper-slide").length;
-
-    if (counterTotal) {
-      counterTotal.textContent = slideCount;
+document.querySelectorAll('a[href="#about"], a[href="#top"]').forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    var hash = a.getAttribute("href");
+    if (hash !== "#about" && hash !== "#top") {
+      return;
     }
 
-    new Swiper(".prices-swiper", {
-      loop: slideCount > 1,
-      speed: 600,
-      spaceBetween: 24,
-      navigation: {
-        nextEl: ".prices-carousel__arrow--next",
-        prevEl: ".prices-carousel__arrow--prev",
-      },
-      pagination: {
-        el: ".prices-carousel__dots",
-        clickable: true,
-      },
-      on: {
-        init: function () {
-          if (counterCurrent) {
-            counterCurrent.textContent = this.realIndex + 1;
-          }
-        },
-        slideChange: function () {
-          if (counterCurrent) {
-            counterCurrent.textContent = this.realIndex + 1;
-          }
-        },
-      },
-    });
-  }
-
-  // smooth scroll for booking links to #about and focus the form
-  document.querySelectorAll('a[href="#about"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var target = document.getElementById('about');
-      if(target){
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-        var input = target.querySelector('input');
-        if(input) input.focus();
-      } else {
-        window.scrollTo({top:0, behavior:'smooth'});
+    e.preventDefault();
+    var target = document.getElementById(hash.slice(1));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      var input = target.querySelector("input");
+      if (input) {
+        input.focus();
       }
-    });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   });
-
-})();
+});
 
 $(".galery_item", this).click(function () {
   var src = jQuery(".galery_item", this).children("img").attr("src");

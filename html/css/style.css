@@ -1887,13 +1887,65 @@ header .header_nav .container .lang.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nomera .container .nomer .nomer_text .price .price_lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 260px;
 }
 
 .nomera .container .nomer .nomer_text .price .price_list {
-  padding: 10px 20px;
-  font-size: 22px;
-  font-style: italic;
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(90, 150, 0, 0.12);
+  border: 1px solid rgba(90, 150, 0, 0.25);
+  font-style: normal;
+  margin-right: 0;
+}
+
+.nomera .container .nomer .nomer_text .price .price_list--foreign {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.nomera .container .nomer .nomer_text .price .price_list__label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5a9600;
+}
+
+.nomera .container .nomer .nomer_text .price .price_list strong {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  white-space: nowrap;
 }
 
 .nomera .container .nomer .nomer_text .price .reserve {
@@ -1904,8 +1956,8 @@ header .header_nav .container .lang.is-active {
 }
 
 .nomera .container .nomer .nomer_text .price .reserve .btn_reserve {
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 10px 28px;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1916,17 +1968,24 @@ header .header_nav .container .lang.is-active {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #000000;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#71bd00), to(#199400));
+  background: -o-linear-gradient(top left, #71bd00 0%, #199400 100%);
+  background: linear-gradient(to bottom right, #71bd00 0%, #199400 100%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nomera .container .nomer .nomer_text .price .reserve .btn_reserve:hover {
-  background: #000;
-  color: #fff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#199400), to(#71bd00));
+  background: -o-linear-gradient(top left, #199400 0%, #71bd00 100%);
+  background: linear-gradient(to bottom right, #199400 0%, #71bd00 100%);
+  color: #ffffff;
 }
 
 #mainCarousel {
